@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarNomes(){
+            console.log("Pedro Hentique Amancio");
+        }
+        mostrarNomes();
+        var mostraDia = function(){
+            console.log("Quarta feira");
+        }
+        mostraDia();
+        var mostrarAno = () => {
+            console.log("2025");
+        }
+        mostrarAno();
+
+        var soma = (a,b) =>{
+            return a + b;
+        }
+        var resultado = soma(15,5);
+        console.log(resultado);
+
+        var pessoa = {
+            nome :"Pedro Henrique",
+            idade:"17"
+        }
+
+        var mudaNome = (objetoPessoa) =>{
+            objetoPessoa.nome = "Lucas"
+            objetoPessoa.municipio = "Vitoria"
+        }
+        mudaNome(pessoa);
+        console.log(pessoa);
+    </script>
+</body>
+</html>
