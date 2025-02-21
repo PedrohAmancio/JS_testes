@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios 02</title>
+    <script>
+        var verificarNotPar = () =>{
+            var numero = (document.getElementById ('numeros').value);
+           var resultado = (document.getElementById ('resultado').value);
+            if(numero%2 == 0){
+                numero.textContent="O numero é par";
+                return;
+            }
+            resultado.textContent = "O numero " + numero +" é par"
+        }
+        
+
+    </script>
+</head>
+<body>
+    <h1>Numero</h1>;
+    <label for="numeros">Digite um numero para saber se é par</label>;
+    <input id="numeros" type="text" placeholder="2">;
+    <button onclick='verificarNotPar()'>Calcular</button>;
+    <p id="resultado"></p>;
+    
+</body>
+</html>

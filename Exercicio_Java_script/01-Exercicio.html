@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+    <script>
+        var noma = ()=>{
+            var nome=(document.getElementById('name').value);
+            var resultado=(document.getElementById('resultado'));
+            
+            resultado.textContent = 'Seja benvindo' + nome;
+        } 
+        
+    </script>
+</head>
+<body>
+    <label for="name">Digite seu nome</label>;
+    <input for="text" id="name" placeholder="Pedro"></input>
+    <button onclick="noma()">Confirmar</button>
+    <p id="resultado"></p>
+    alert(nome);
+</body>
+</html>
