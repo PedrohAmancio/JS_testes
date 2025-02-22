@@ -7,12 +7,13 @@
     <script>
         var verificarNotPar = () =>{
             var numero = (document.getElementById ('numeros').value);
-           var resultado = (document.getElementById ('resultado').value);
+           
             if(numero%2 == 0){
-                numero.textContent="O numero é par";
+                resultado.textContent="O numero é par";
                 return;
+            }else{
+                resultado.textContent="O numero é impar"
             }
-            resultado.textContent = "O numero " + numero +" é par"
         }
         
 
