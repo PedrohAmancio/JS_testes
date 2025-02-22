@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var verificarPrimo = () =>{
+            var numero = (document.getElementById ('numeros').value);
+           
+            if((numero%1 == 0) && (numero%numero==0) && (numero%4!=0) && (numero%6!=0) && (numero%8!=0)){
+                resultado.textContent="O numero é primo";
+            }else{
+                resultado.textContent="O  numero não é primo"
+            }
+        }
+        
+
+    </script>
+</head>
+<body>
+    <h1>Numero</h1>;
+    <label for="numeros">Digite um numero para saber se é primo</label>;
+    <input id="numeros" type="text" placeholder="2">;
+    <button onclick='verificarPrimo()'>Calcular</button>;
+    <p id="resultado"></p>;
+</body>
+</html>
