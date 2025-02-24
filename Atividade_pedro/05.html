@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    confirmar = () =>{
+        var nun = document.getElementById('nunss');
+
+        if(nun % 1 === 0 && nun % nun === 0){
+            document.getElementById('resp').textContent = "é um número inteiro.";
+        }else{
+            document.getElementById('resp').textContent = "é um número inteiro.";
+        }
+    }
+</script>
+<body>
+    <label for="nun"></label>
+    <input type="number" id="nunss" placeholder="ex:5">
+
+    <button onclick="confirmar()">confirmar</button>
+    <p id="resp"></p>
+</body>
+</html>

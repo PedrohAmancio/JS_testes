@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03</title>
+</head>
+<script>
+    var nus = [];
+    var soma = 0;
+    var nuns = () =>{
+        var valor = (parseFloat(document.getElementById('numero').value));
+
+        if(!isNaN(valor)){
+            nus.push(valor);
+        }else{
+            document.write("Digite valores válidos");
+        }
+
+        for(var a = 0; a < nus.length; a++){
+            soma += nus[a];
+        }
+    }
+    var parar = () =>{
+        var resultado;
+        resultado = soma/nus.length;
+        console.log(resultado);
+    }
+</script>
+<body>
+    <label for="numero"></label>
+    <input type="number" id="numero" placeholder="Ex: 5">
+
+    <button onclick="nuns()">confirmar</button><button onclick="parar()">parar</button>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06</title>
+</head>
+
+<body>
+    <h2>preencha o array</h2>
+    <label for="arrasy"></label>
+    <input type="text" id="array" placeholder="ex 1">
+
+    <button onclick="arrayy()">confirmar</button> <button onclick="cancelar()">cancelar</button>
+    <p id="resp"></p>
+</body>
+
+<script>
+    var array = [];
+    var nun = document.getElementById('array');
+
+    arrayy = () => {
+        array.push(nun.value);
+    }
+    cancelar = () => {
+        var output = "";
+        for (var c = array.length - 1; c >= 0; c--) {
+            output += array[c] + '<br>';
+            console.log(array[c]);
+        }
+    }
+</script>
+
+</html>

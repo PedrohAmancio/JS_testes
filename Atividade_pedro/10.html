@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="fatorial"></label>
+    <input type="number" id="fatorial" placeholder="ex:3">
+
+    <button onclick="fatorial()">confirmar</button>
+    <p id="resposta"></p>
+</body>
+<script>
+    var fatorial = () =>{
+        var num = document.getElementById('fatorial').value;
+        var result = 1;
+
+        for(var a = 1; a <= num; a++){
+            result *= a;
+        }
+
+        document.getElementById('resposta').textContent = result;
+    }
+</script>
+
+</html>

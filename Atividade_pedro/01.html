@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+
+    <script>
+        var npme = () => {
+            var nome = (document.getElementById('name').value);
+            var resultado = (document.getElementById('resultado'));
+
+            resultado.textContent = 'Seja bem vindo!' + nome;
+        }
+    </script>
+</head>
+
+<body>
+    <label for="name">Digite seu nome:</label>;
+    <input type="text" id="name" placeholder="Wesley"></input>;
+
+    <button onclick='npme()'>confirmar</button>;
+    <p id="resultado"></p>;
+</body>
+
+</html>

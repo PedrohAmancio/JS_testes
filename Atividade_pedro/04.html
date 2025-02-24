@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+</head>
+<script>
+    var letters = () => {
+        var letra = document.getElementById('numero').value;
+
+        if (isNaN(letra)) {
+            document.getElementById('resp').textContent = letra.toUpperCase();
+        }
+    }
+</script>
+
+<body>
+    <label for="numero"></label>
+    <input type="text" id="numero" placeholder="ex: mamaco">
+
+    <button onclick="letters()">confirmar</button>
+    <p id="resp"></p>
+</body>
+
+</html>

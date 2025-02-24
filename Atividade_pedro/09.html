@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09</title>
+</head>
+
+<body>
+    <label for="binário"></label>
+    <input type="number" id="binario" placeholder="ex: 1">
+
+    <button onclick="bin()">Confirmar</button>
+    <p id="r"></p>
+</body>
+<script>
+    var bin = () =>{
+        var num = parseInt(document.getElementById('binario').value);
+        var p = "";
+
+        while(num >= 2){
+            p = (num % 2) + p;
+            num = Math.floor(num/2); //tira partes decimais
+        }
+
+        p = num + p;
+        document.getElementById('r').textContent =p;
+    }
+</script>
+</html>
